@@ -29,22 +29,29 @@ namespace ZooManager_WPF_DB
         {
             InitializeComponent();
 
-            string connectionString = ConfigurationManager.ConnectionStrings["ZooManager-WPF-DB.Properties.Settings.ZooDBConnectionString"].ConnectionString;
+            string connectionString = ConfigurationManager.ConnectionStrings["ZooManager_WPF_DB.Properties.Settings.ZooDBConnectionString"].ConnectionString;
             sqlConnection = new SqlConnection(connectionString);
             ShowZoos();
         }
 
         private void ShowZoos()
         {
-            string query = "SELECT * FROM Zoo";
-            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(query, sqlConnection);
-            using (sqlDataAdapter)
+            try
             {
-                DataTable zooTable = new DataTable();
-                sqlDataAdapter.Fill(zooTable);
-                listZoos.DisplayMemberPath = "Location";
-                listZoos.SelectedValuePath = "Id";
-                listZoos.ItemsSource = zooTable.DefaultView;
+                string query = "SELECT * FROM Zoo";
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(query, sqlConnection);
+                using (sqlDataAdapter)
+                {
+                    DataTable zooTable = new DataTable();
+                    sqlDataAdapter.Fill(zooTable);
+                    listZoos.DisplayMemberPath = "Location";
+                    listZoos.SelectedValuePath = "Id";
+                    listZoos.ItemsSource = zooTable.DefaultView;
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
             }
 
         }
