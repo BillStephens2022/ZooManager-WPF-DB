@@ -1,0 +1,16 @@
+C:\Users\two4o\Desktop\C# Development\ZooManager-WPF-DB\ZooManager-WPF-DB\bin\Debug\ZooManager-WPF-DB.exe.config
+C:\Users\two4o\Desktop\C# Development\ZooManager-WPF-DB\ZooManager-WPF-DB\bin\Debug\ZooManager-WPF-DB.exe
+C:\Users\two4o\Desktop\C# Development\ZooManager-WPF-DB\ZooManager-WPF-DB\bin\Debug\ZooManager-WPF-DB.pdb
+C:\Users\two4o\Desktop\C# Development\ZooManager-WPF-DB\ZooManager-WPF-DB\obj\Debug\ZooManager-WPF-DB.csproj.AssemblyReference.cache
+C:\Users\two4o\Desktop\C# Development\ZooManager-WPF-DB\ZooManager-WPF-DB\obj\Debug\MainWindow.g.cs
+C:\Users\two4o\Desktop\C# Development\ZooManager-WPF-DB\ZooManager-WPF-DB\obj\Debug\App.g.cs
+C:\Users\two4o\Desktop\C# Development\ZooManager-WPF-DB\ZooManager-WPF-DB\obj\Debug\ZooManager-WPF-DB_Content.g.cs
+C:\Users\two4o\Desktop\C# Development\ZooManager-WPF-DB\ZooManager-WPF-DB\obj\Debug\ZooManager-WPF-DB_MarkupCompile.cache
+C:\Users\two4o\Desktop\C# Development\ZooManager-WPF-DB\ZooManager-WPF-DB\obj\Debug\ZooManager-WPF-DB_MarkupCompile.lref
+C:\Users\two4o\Desktop\C# Development\ZooManager-WPF-DB\ZooManager-WPF-DB\obj\Debug\MainWindow.baml
+C:\Users\two4o\Desktop\C# Development\ZooManager-WPF-DB\ZooManager-WPF-DB\obj\Debug\ZooManager-WPF-DB.g.resources
+C:\Users\two4o\Desktop\C# Development\ZooManager-WPF-DB\ZooManager-WPF-DB\obj\Debug\ZooManager_WPF_DB.Properties.Resources.resources
+C:\Users\two4o\Desktop\C# Development\ZooManager-WPF-DB\ZooManager-WPF-DB\obj\Debug\ZooManager-WPF-DB.csproj.GenerateResource.cache
+C:\Users\two4o\Desktop\C# Development\ZooManager-WPF-DB\ZooManager-WPF-DB\obj\Debug\ZooManager-WPF-DB.csproj.CoreCompileInputs.cache
+C:\Users\two4o\Desktop\C# Development\ZooManager-WPF-DB\ZooManager-WPF-DB\obj\Debug\ZooManager-WPF-DB.exe
+C:\Users\two4o\Desktop\C# Development\ZooManager-WPF-DB\ZooManager-WPF-DB\obj\Debug\ZooManager-WPF-DB.pdb

@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Zoo] (
+    [Id]       INT          NOT NULL,
+    [Location] VARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
