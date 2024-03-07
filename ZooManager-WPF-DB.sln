@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooManager-WPF-DB", "ZooManager-WPF-DB\ZooManager-WPF-DB.csproj", "{DEACF38E-ED61-4027-8706-C98F3F409FD3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3044292C-E13E-4F12-BEA3-403A35CAEBEA}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEACF38E-ED61-4027-8706-C98F3F409FD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEACF38E-ED61-4027-8706-C98F3F409FD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEACF38E-ED61-4027-8706-C98F3F409FD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEACF38E-ED61-4027-8706-C98F3F409FD3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E1167DA-817F-4A3E-AA13-C5995BFF79CD}
+	EndGlobalSection
+EndGlobal
