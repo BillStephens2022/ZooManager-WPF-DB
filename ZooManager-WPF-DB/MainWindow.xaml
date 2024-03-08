@@ -21,7 +21,7 @@
 
         <Button Content="Remove Animal" HorizontalAlignment="Left" Margin="198,196,0,0" VerticalAlignment="Top" Height="32" Width="133" RenderTransformOrigin="2.057,0.644"/>
         <Button Content="Add Animal" HorizontalAlignment="Left" Margin="198,281,0,0" VerticalAlignment="Top" Height="32" Width="133" RenderTransformOrigin="0.45,2.534" Click="AddAnimal_Click" />
-        <Button Content="Update Animal" HorizontalAlignment="Left" Margin="198,320,0,0" VerticalAlignment="Top" Height="32" Width="133" RenderTransformOrigin="0.45,2.534"/>
+        <Button Content="Update Animal" HorizontalAlignment="Left" Margin="198,320,0,0" VerticalAlignment="Top" Height="32" Width="133" RenderTransformOrigin="0.45,2.534" Click="UpdateAnimal_Click"/>
 
         <Button Content="Delete Animal" HorizontalAlignment="Left" Margin="370,320,0,0" VerticalAlignment="Top" Height="32" Width="133" RenderTransformOrigin="0.45,2.534" Click="DeleteAnimal_Click" />
         <Button Content="Add Animal to Zoo" HorizontalAlignment="Left" Margin="370,23,0,0" VerticalAlignment="Top" Height="30" Width="133" RenderTransformOrigin="1.011,0.465" Click="AddAnimalToZoo_Click" />
