@@ -1,8 +1,9 @@
-﻿CREATE TABLE [dbo].ZooAnimal
-(
-	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
-    [ZooId] INT NOT NULL, 
-    [AnimalId] INT NOT NULL, 
-    CONSTRAINT ZooFK FOREIGN KEY (ZooId) REFERENCES Zoo(Id), 
-    CONSTRAINT AnimalFK FOREIGN KEY (AnimalId) REFERENCES Animal(Id)
-)
+﻿CREATE TABLE [dbo].[ZooAnimal] (
+    [Id]       INT IDENTITY (1, 1) NOT NULL,
+    [ZooId]    INT NOT NULL,
+    [AnimalId] INT NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC),
+    CONSTRAINT [ZooFK] FOREIGN KEY ([ZooId]) REFERENCES [dbo].[Zoo] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [AnimalFK] FOREIGN KEY ([AnimalId]) REFERENCES [dbo].[Animal] ([Id]) ON DELETE CASCADE
+);
+
