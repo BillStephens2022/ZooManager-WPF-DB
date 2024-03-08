@@ -108,21 +108,55 @@ namespace ZooManager_WPF_DB
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.ToString());
+                // MessageBox.Show(e.ToString());
             }
 
         }
 
-
         private void DeleteZoo_Click(object sender, RoutedEventArgs e)
         {
-            string query = "DELETE FROM Zoo WHERE id = @ZooId";
-            SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
-            sqlConnection.Open();
-            sqlCommand.Parameters.AddWithValue("@ZooId", listZoos.SelectedValue);
-            sqlCommand.ExecuteScalar();
-            sqlConnection.Close();
-            ShowZoos();
+            try
+            {
+                string query = "DELETE FROM Zoo WHERE id = @ZooId";
+                SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
+                sqlConnection.Open();
+                sqlCommand.Parameters.AddWithValue("@ZooId", listZoos.SelectedValue);
+                sqlCommand.ExecuteScalar();
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                sqlConnection.Close();
+                ShowZoos();
+            }
+            
+            
+        }
+
+        private void AddZoo_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                string query = "INSERT INTO Zoo VALUES (@Location)";
+                SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
+                sqlConnection.Open();
+                sqlCommand.Parameters.AddWithValue("@Location", myTextBox.Text);
+                sqlCommand.ExecuteScalar();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                sqlConnection.Close();
+                ShowZoos();
+            }
         }
     }
 }
