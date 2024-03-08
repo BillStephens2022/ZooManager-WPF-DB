@@ -9,9 +9,12 @@
     <Grid>
         <Label Content="Zoo List" HorizontalAlignment="Left" Margin="43,10,0,0" VerticalAlignment="Top"/>
         <ListBox x:Name="listZoos" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="43,35,643,251" SelectionChanged="listZoos_SelectionChanged"/>
-        
+
         <Label Content="Associated Animals List" HorizontalAlignment="Left" Margin="198,10,0,0" VerticalAlignment="Top"/>
         <ListBox x:Name="listAssociatedAnimals" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="198,35,469,251"/>
+        
+        <Button Content="Add Animal to Zoo" HorizontalAlignment="Left" Margin="370,23,0,0" VerticalAlignment="Top" Height="30" Width="133" RenderTransformOrigin="1.011,0.465" Click="Button_Click"/>
+        <ListBox x:Name="listAllAnimals" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="370,58,297,164"/>
 
     </Grid>
 </Window>
