@@ -165,6 +165,32 @@ namespace ZooManager_WPF_DB
             }
         }
 
+        private void RemoveAnimalFromZoo_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                string query = "DELETE FROM ZooAnimal WHERE AnimalId = @AnimalId AND ZooId = @ZooId";
+                Console.WriteLine(query);
+                SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
+                sqlConnection.Open();
+                sqlCommand.Parameters.AddWithValue("@ZooId", listAssociatedAnimals.SelectedValue);
+                sqlCommand.Parameters.AddWithValue("@AnimalId", listZoos.SelectedValue);
+                Console.WriteLine("AnimalId = " + listAssociatedAnimals.SelectedValue);
+                Console.WriteLine("ZooId = " + listZoos.SelectedValue);
+                sqlCommand.ExecuteScalar();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                sqlConnection.Close();
+                ShowAssociatedAnimals();
+            }
+        }
+
         private void AddAnimalToZoo_Click(object sender, RoutedEventArgs e)
         {
             try
