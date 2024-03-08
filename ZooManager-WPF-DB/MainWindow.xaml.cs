@@ -175,10 +175,7 @@ namespace ZooManager_WPF_DB
                 sqlConnection.Open();
                 sqlCommand.Parameters.AddWithValue("@ZooId", listAssociatedAnimals.SelectedValue);
                 sqlCommand.Parameters.AddWithValue("@AnimalId", listZoos.SelectedValue);
-                Console.WriteLine("AnimalId = " + listAssociatedAnimals.SelectedValue);
-                Console.WriteLine("ZooId = " + listZoos.SelectedValue);
                 sqlCommand.ExecuteScalar();
-
             }
             catch (Exception ex)
             {
